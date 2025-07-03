@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import adminRoutes from "./routes/admin.js";
+import { router as adminRoutes } from "./routes/admin.js";
 import shopRoutes from "./routes/shop.js";
 import path from "path";
 import appRoot from "./utils/appRoot.js";
