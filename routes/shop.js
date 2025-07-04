@@ -5,9 +5,9 @@ import { products } from "./admin.js";
 const router = express.Router();
 
 router.get("/", (req, res, next) => {
-  console.log("shop.js", products);
+  // console.log("shop.js", products);
 
-  res.sendFile(path.join(appRoot, "views", "shop.html"));
+  res.render("shop", { prods: products, docTitle: "Node Cart" });
 });
 
 export default router;

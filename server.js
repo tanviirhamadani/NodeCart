@@ -8,7 +8,8 @@ import appRoot from "./utils/appRoot.js";
 const PORT = 8000;
 
 const app = express();
-
+app.set("view engine", "pug");
+app.set("views", "views");
 app.use(bodyParser.urlencoded());
 app.use(express.static(path.join(appRoot, "public")));
 
