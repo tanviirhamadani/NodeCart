@@ -7,7 +7,11 @@ const router = express.Router();
 router.get("/", (req, res, next) => {
   // console.log("shop.js", products);
 
-  res.render("shop", { prods: products, docTitle: "Node Cart" });
+  res.render("shop", {
+    prods: products,
+    pageTitle: "Node Cart",
+    hasProducts: products.length > 0,
+  });
 });
 
 export default router;
