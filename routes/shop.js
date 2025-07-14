@@ -10,7 +10,7 @@ router.get("/", (req, res, next) => {
   res.render("shop", {
     prods: products,
     pageTitle: "Node Cart",
-    hasProducts: products.length > 0,
+    path: "/",
   });
 });
 
